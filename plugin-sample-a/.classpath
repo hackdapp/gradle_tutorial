@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/common" exported="true"/>
+	<classpathentry sourcepath="/Users/nolan/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.1.6/d3b861ec887a4abd351052edca7fbacdc8b9ddbd/groovy-all-2.1.6-sources.jar" kind="lib" path="/Users/nolan/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.1.6/165b8246372a829c1915611646f6d964010656cf/groovy-all-2.1.6.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/nolan/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/b8cd7308b183ae0c03bc09fea4febb92c0cc5c48/junit-4.0-sources.jar" kind="lib" path="/Users/nolan/.gradle/caches/modules-2/files-2.1/junit/junit/4.0/53867ff28a9bd2b05ed2ea6e278f8f6439576e84/junit-4.0.jar" exported="true"/>
+</classpath>

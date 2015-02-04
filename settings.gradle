@@ -1,0 +1,3 @@
+rootProject.name='gradle-tutorial'
+include ':server',':plugin-sample-a',':plugin-sample-b',':common'
+

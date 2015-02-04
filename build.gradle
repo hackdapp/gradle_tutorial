@@ -1,0 +1,66 @@
+allprojects {
+	task hello << { task -> println "I'm $task.project.name" }
+}
+
+subprojects {
+  apply plugin: 'eclipse'
+  apply plugin: 'java'
+  apply plugin: 'groovy'
+  apply plugin: 'eclipse'
+  
+  //def localMavenRepo = 'THIS IS PATH :' + new File(System.getProperty('M2_HOME'), '.m2/repository').absolutePath
+ 
+  repositories { 
+    mavenLocal()
+    mavenCentral artifactUrls:["/usr/local/apache-maven-3.2.5/repo"]
+  }
+
+  configurations {
+
+  }
+}
+
+project(':server'){
+
+	task taska {
+		println 'this is a server'
+	}
+
+}
+
+project(':plugin-sample-a'){
+
+	task taska {
+		println 'this is a plugin a '
+	}
+
+	/**
+	 * Declare dependencies
+	 * @see http://www.gradle.org/docs/current/userguide/userguide_single.html#sec:how_to_declare_your_dependencies
+	 */
+	dependencies {
+	    compile project(':common')
+	}
+
+}
+
+project(':plugin-sample-b'){
+
+	task taska {
+		println 'this is a plugin b '
+	}
+
+}
+
+project(":common"){
+
+	/**
+	 * Declare dependencies
+	 * @see http://www.gradle.org/docs/current/userguide/userguide_single.html#sec:how_to_declare_your_dependencies
+	 */
+	dependencies {
+	    compile 'org.codehaus.groovy:groovy-all:2.1.6'
+	    compile 'org.apache.commons:commons-lang3:3.3.2'
+	}
+
+}
