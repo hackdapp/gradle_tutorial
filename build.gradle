@@ -11,8 +11,9 @@ subprojects {
   //def localMavenRepo = 'THIS IS PATH :' + new File(System.getProperty('M2_HOME'), '.m2/repository').absolutePath
  
   repositories { 
-    mavenLocal()
-    mavenCentral artifactUrls:["/usr/local/apache-maven-3.2.5/repo"]
+   	mavenLocal()
+	mavenCentral()
+   //	mavenCentral artifactUrls:["/usr/local/apache-maven-3.0.5/repo"]
   }
 
   configurations {
