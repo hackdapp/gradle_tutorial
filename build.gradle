@@ -21,7 +21,8 @@ subprojects {
 }
 
 project(':server'){
-
+	archivesBaseName = "SmartServer"
+	version = "1.0.snapshot"
 	task taska {
 		println 'this is a server'
 	}
@@ -29,6 +30,8 @@ project(':server'){
 }
 
 project(':plugin-sample-a'){
+	archivesBaseName = "PluginSampleA"
+	version = "1.0.0.1.snapshot"
 
 	task taska {
 		println 'this is a plugin a '
@@ -45,6 +48,8 @@ project(':plugin-sample-a'){
 }
 
 project(':plugin-sample-b'){
+	archivesBaseName = "PluginSampleB"
+	version = "1.0.0.1.snapshot"	
 
 	task taska {
 		println 'this is a plugin b '
@@ -53,7 +58,8 @@ project(':plugin-sample-b'){
 }
 
 project(":common"){
-
+	archivesBaseName = "Common"
+	version = "1.0.final"
 	/**
 	 * Declare dependencies
 	 * @see http://www.gradle.org/docs/current/userguide/userguide_single.html#sec:how_to_declare_your_dependencies
